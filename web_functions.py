@@ -16,7 +16,7 @@ def load_data():
 
    
     # Perform feature and target split
-    X = df[["so2","no2","rspm","spm","pm2_5","nh3","o3","co","SPMi","PMi","aqi"]]
+    X = df[["so2","no2","rspm","spm","pm2_5","nh3","o3","co","SPMi","PMi"]]
     y = df['AQI_Range']
 
     return df, X, y
