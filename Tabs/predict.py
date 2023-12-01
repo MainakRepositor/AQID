@@ -77,6 +77,6 @@ def app(df, X, y):
             unsafe_allow_html=True) 
             
         # Print the score of the model 
-        st.sidebar.write("The model used is trusted by environmetal scientists and has an accuracy of ", (score*100),"%")
+        st.sidebar.write("The model used is trusted by environmetal scientists and has an accuracy of ", round((score*100),2),"%")
 
 
