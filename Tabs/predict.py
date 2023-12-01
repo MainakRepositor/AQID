@@ -36,7 +36,7 @@ def app(df, X, y):
     co = st.slider("Carbon Monoxide Level", float(df["co"].min()), float(df["co"].max()))
     SPMi = st.slider("Suspended Particulate Matter Index", float(df["SPMi"].min()), float(df["SPMi"].max()))
     PMi = st.slider("Particulate Matter Index", float(df["PMi"].min()), float(df["PMi"].max()))
-    aqi = st.slider("Air Quality Index", float(df["aqi"].min()), float(df["aqi"].max()))
+   
  
 
     # Create a list to store all the features
