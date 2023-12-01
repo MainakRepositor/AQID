@@ -38,6 +38,14 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
+# Real time AQI measure
+st.sidebar.markdown(
+    f'<a href="https://lung-quality-detector.streamlit.app/" target="_blank" style="display: inline-block; padding: 12px 20px; background-color: blue; color: white; text-align: center; text-decoration: none; font-size: 16px; border-radius: 4px;">Lung Condition Analyzer</a>',
+    unsafe_allow_html=True
+)
+
+
+
 # Loading the dataset.
 df, X, y = load_data()
 
