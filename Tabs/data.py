@@ -21,9 +21,7 @@ def app(df):
     # Give subheader
     st.subheader("Columns Description:")
 
-    # Create a checkbox to get the summary.
-    if st.checkbox("View Summary"):
-        st.dataframe(df.describe())
+    
 
     # Create multiple check box in row
     col_name, col_dtype, col_data = st.columns(3)
@@ -41,8 +39,8 @@ def app(df):
     
     # Show data for each columns
     with col_data: 
-        if st.checkbox("Columns Data"):
-            col = st.selectbox("Column Name", list(df.columns))
-            st.dataframe(df[col])
+        # Create a checkbox to get the summary.
+        if st.checkbox("View Summary"):
+            st.dataframe(df.describe())
 
  
